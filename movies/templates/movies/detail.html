@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="card mb-3" style="max-width: 750px;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src=" {{ movie.image_url }} " class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title fs-1">{{movie.title}}</h5>
+          <h5 class="card-title fs-3">Rs. {{movie.daily_rate}}/-</h5>
+          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur doloribus unde in nemo expedita omnis voluptas molestiae, officiis sint et rem, laudantium repudiandae, vel asperiores magni reiciendis voluptates dolor quas nisi ipsam quisquam ut quibusdam! Aliquid iure ducimus nisi quos corrupti soluta repellendus eum quam a veritatis. Nihil optio corporis illo quasi laborum sapiente adipisci. A neque vitae voluptas molestiae rerum officia dolore, eius commodi quod ipsum illo doloremque sit! Est at provident aspernatur, hic iste, veniam cumque, tempore beatae ex quia illo voluptatibus atque?</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock  %}

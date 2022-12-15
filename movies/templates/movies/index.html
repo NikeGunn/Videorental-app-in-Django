@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+
+<div class="row">
+    {% for movie in movies %}
+    <div class="col-3">
+    <br>
+       <div class="card" style="width: 16rem;">
+              <img src="{{ movie.image_url }}" class="card-img-top" alt="Avengers" />
+                <h5 class="card-title">{{movie.title}}</h5>
+                <h5 class="card-title">Rs. {{movie.daily_rate}}/-</h5>
+              <a href="{% url 'cinema:detail' movie.id  %}" class="btn btn-primary">Rent</a>
+              
+            </div>
+          </div> 
+        {% endfor %}
+    </div>
+
+    
+</div>
+
+{% endblock  %}

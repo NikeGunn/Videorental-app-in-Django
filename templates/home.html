@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<div class="card text-center">
+    <!-- <div class="card-header fs-3">
+      Movies
+    </div> -->
+    <div>
+        <img class="card-img-top" style="width: 15rem;" src="https://upload.wikimedia.org/wikipedia/commons/0/01/Hazaaron_Khwaishein_Aisi_Official_Poster.jpg" alt="Card image cap">
+    </div>
+    
+      <p class="fw-bolder fs-1">Total Collections of movies</p>
+      <a href="{% url 'cinema:index' %}" class="btn btn-primary">Go To Movies Lists</a>
+    </div>
+  </div>
+
+{% endblock  %}
