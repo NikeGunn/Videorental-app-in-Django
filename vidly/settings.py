@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'movies',
     'api.apps.ApiConfig',
-    'tastypie'
+    'tastypie',
+    'whitenoise'
 ]
 
 MIDDLEWARE = [
