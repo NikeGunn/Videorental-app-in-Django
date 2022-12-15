@@ -32,6 +32,7 @@ ALLOWED_HOSTS = ["*"]
 # Application definition
 
 INSTALLED_APPS = [
+    'whitenoise',
     "admin_interface",
     "colorfield",
     'django.contrib.admin',
@@ -42,8 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'movies',
     'api.apps.ApiConfig',
-    'tastypie',
-    'whitenoise'
+    'tastypie'
 ]
 
 MIDDLEWARE = [
